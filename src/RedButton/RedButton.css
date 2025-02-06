@@ -1,0 +1,17 @@
+@reference "../index.css";
+
+.red-button__container {
+  @apply flex relative overflow-hidden w-[17.7rem] ps-3;
+}
+
+.red-button__button {
+  @apply bg-[#B21F24] uppercase flex justify-center items-center gap-15 -skew-x-[16deg] flex-shrink-0 hover:cursor-pointer active:bg-[#800000];
+}
+
+.red-button__text {
+  @apply text-white tracking-wide leading-[19px] -skew-x-[-16deg] text-[16px] py-5 ps-21;
+}
+
+.red-button__img {
+  @apply -skew-x-[-16deg] pe-17;
+}

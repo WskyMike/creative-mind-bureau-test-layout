@@ -1,0 +1,11 @@
+@reference "./index.css";
+
+#root {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.page {
+  @apply min-h-screen flex flex-col lap:px-[2%] px-[3%] pt-[22px] text-sm;
+  @apply max-md:pt-0 max-md:px-0;
+}

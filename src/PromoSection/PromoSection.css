@@ -1,0 +1,30 @@
+@reference "../index.css";
+
+.promo-section {
+  @apply min-h-[24rem] flex-grow rounded backdrop-blur-md mb-25;
+  background: linear-gradient(
+    154deg,
+    rgba(170, 146, 122, 0.92) 40%,
+    rgba(255, 255, 255, 0.92) 112%
+  );
+  @apply lap:mb-32;
+  @apply max-md:min-h-[31.3rem];
+}
+
+.promo-section__content {
+  @apply flex flex-col ps-15 pt-14 max-w-185;
+  @apply lap:ps-18 lap:pt-20;
+  @apply max-md:px-3 max-md:pt-9;
+}
+
+.promo-section__text {
+  @apply text-white uppercase text-[2.9rem] tracking-wider leading-[57px];
+  @apply lap:text-[3.1rem] lap:leading-[60px];
+  @apply max-md:text-[2rem] max-md:leading-[38px];
+}
+
+.promo-section__button-wrapper {
+  @apply pt-11 ps-1 pb-[5%];
+  @apply lap:ps-5 lap:pb-[10%];
+  @apply max-md:pt-7;
+}

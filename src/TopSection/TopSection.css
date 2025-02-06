@@ -1,0 +1,33 @@
+@reference "../index.css";
+
+.top-section {
+  @apply bg-[#D9D9D9] rounded  min-h-128 flex-grow relative w-full overflow-hidden mb-19;
+  @apply lap:min-h-215 lap:mb-32;
+  @apply max-md:rounded-none max-md:min-h-160 max-md:mb-16;
+}
+
+.top-section__video {
+  @apply absolute inset-0 w-full h-full object-cover scale-140;
+}
+
+.top-section__button-container {
+  @apply absolute -bottom-[1px] -right-5 flex justify-center bg-white h-23 w-53 -skew-x-[16deg];
+  @apply lap:h-32 lap:w-88;
+  @apply max-md:h-11 max-md:w-49;
+}
+
+.top-section__button {
+  @apply bg-[#B21F24] uppercase h-14 w-88 flex justify-center items-center gap-6 hover:cursor-pointer active:bg-[#800000];
+  @apply lap:h-23;
+  @apply max-md:h-11 max-md:gap-4
+}
+
+.top__section__button-text {
+  @apply text-white tracking-wide leading-[19px] -skew-x-[-16deg] lap:text-[1rem] text-[12px];
+  @apply lap:pb-10;
+}
+
+.top__section__button-img {
+  @apply -skew-x-[-16deg] max-w-[3%];
+  @apply lap:pb-10 lap:max-w-[100%];
+}

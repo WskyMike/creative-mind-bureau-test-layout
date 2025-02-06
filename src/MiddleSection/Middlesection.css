@@ -1,0 +1,116 @@
+@reference "../index.css";
+
+.middle-section {
+  @apply bg-[#F2F2F2] rounded min-h-236 flex-grow relative overflow-hidden mb-25 -ms-[3%] -me-[2%] w-[106%] flex flex-col;
+  @apply lap:min-h-406 lap:w-[104%] lap:-ms-[2%] lap:mb-32;
+  @apply max-md:px-[0.8rem] max-md:ms-0 max-md:me-0 max-md:w-[100%] max-md:rounded-none max-md:mb-20;
+}
+
+.middle-section__first-block {
+  @apply px-[2.2%] flex flex-col items-start justify-center w-[69%] pt-8;
+  @apply lap:pt-24 lap:w-[73%];
+  @apply max-md:px-0 max-md:w-[100%];
+}
+
+.first-block__title {
+  @apply text-[3.1rem] leading-15 text-[#614D49];
+  @apply lap:text-[4.5rem] lap:leading-20;
+  @apply max-md:text-[2.5rem] max-md:leading-12 max-md:pe-[1.5rem] max-md:tracking-[0.04em];
+}
+
+.first-block__bar {
+  @apply absolute top-[8.5%] left-[35%] w-267 border-1 border-[#AA927A];
+  @apply max-[1280px]:top-[138px] max-[1280px]:left-[50%] max-[1280px]:w-155;
+  @apply max-[1204px]:top-[60px] max-[1204px]:left-[50%] max-[1204px]:w-145;
+  @apply max-[767px]:top-[54px] max-[767px]:left-[60%] max-[767px]:w-75;
+  @apply max-[440px]:left-[85%] 
+
+}
+
+.first-block__title--highlight {
+  @apply text-[#B21F24];
+}
+
+.first-block__description {
+  @apply text-[16px] leading-[20px] text-[#AA927A] font-['PFDinTextCompPro-Regular'] pt-5;
+  @apply lap:pt-11 lap:text-[28px] lap:leading-[33px];
+  @apply max-md:pt-16;
+}
+
+.middle-section__second-block {
+  @apply flex items-stretch gap-2 relative min-h-[19rem] px-[2%] pt-[1.3rem];
+  @apply lap:gap-8 lap:min-h-[25rem];
+  @apply max-md:flex-col-reverse max-md:pt-[2.4rem] max-md:px-0;
+}
+
+.second-block__image-wrapper {
+  @apply relative w-[83%] flex flex-col justify-end;
+  @apply max-md:w-[100%] max-md:min-h-[15.3rem];
+}
+
+.second-block__image {
+  @apply absolute inset-0 bg-cover bg-no-repeat bg-[center_top_1rem] z-0 h-full; /* Фоновое изображение */
+  background-image: url("../assets/zavod_2.webp");
+}
+
+.second-block__text-wrapper {
+  @apply w-[54%] flex flex-col gap-0 pb-[0] pt-[1%] ps-[1%];
+  @apply lap:w-[60%] lap:pt-[5%] lap:gap-2 lap:pb-[15%] lap:ps-[0.5rem];
+  @apply max-md:w-[100%] max-md:p-0;
+}
+
+.second-block__main {
+  @apply flex;
+}
+
+.second-block__text-box {
+  @apply flex flex-col pt-22 max-w-[41.8rem];
+}
+
+.second-block__button-wrapper {
+  @apply relative z-10 self-end;
+}
+
+.second-block__text-title,
+.third-block__text-title {
+  @apply text-[#311311] text-[1.4rem] leading-[33px];
+  @apply lap:text-[1.9rem];
+  @apply max-md:text-[1.4rem] max-md:leading-[24px];
+}
+
+.second-block__text-content,
+.third-block__text-content {
+  @apply text-[#7C6E6B] leading-[20px] pt-4 text-[16px] font-['PFDinTextCompPro-Regular'];
+  @apply lap:pt-5;
+  /* @apply max-md:; */
+}
+
+.middle-section__third-block {
+  @apply flex items-stretch flex-row-reverse gap-2 relative min-h-[21rem] ps-[1.7%] pe-[2.5%] pt-[3.4%] mb-[5%];
+  @apply lap:gap-13 lap:min-h-[25rem] lap:pt-[3.6%] lap:px-[2%] lap:mb-[0];
+  @apply max-md:flex-col-reverse max-md:pt-[0.5rem] max-md:px-0 max-md:mb-[9%];
+}
+
+.third-block__image-wrapper {
+  @apply relative w-[83%] flex flex-col justify-end;
+  @apply max-md:w-[100%] max-md:min-h-[15.3rem];
+}
+
+.third-block__image {
+  @apply absolute inset-0 bg-cover bg-no-repeat bg-[center_top_1rem] z-0 h-full; /* Фоновое изображение */
+  background-image: url("../assets/zavod_3.webp");
+}
+
+.third-block__text-wrapper {
+  @apply w-[54%] flex flex-col gap-0 pb-[0] pt-[1%] ps-[1%];
+  @apply lap:w-[60%] lap:pt-[5%] lap:gap-3 lap:pb-[15%] lap:ps-[0];
+  @apply max-md:w-[100%] max-md:p-0;
+}
+
+.third-block__text-box {
+  @apply flex flex-col;
+}
+
+.third-block__button-wrapper {
+  @apply relative z-10 self-end;
+}

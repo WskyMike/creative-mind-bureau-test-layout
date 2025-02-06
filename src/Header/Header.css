@@ -1,0 +1,160 @@
+@reference "../index.css";
+
+.header-wrapper {
+  @apply relative overflow-hidden w-full;
+}
+
+.header {
+  @apply relative lap:pt-[1rem] pt-[0.5rem] flex flex-col uppercase lap:ps-[19rem] max-[976px]:ps-[4rem] ps-[11rem] leading-[16.8px] tracking-wide -skew-x-[16deg] w-[105%];
+  @apply max-md:pt-0  max-md:ps-[7.8rem];
+}
+
+.header__top-row,
+.header__bottom-row {
+  @apply flex flex-row justify-between w-full items-center;
+}
+
+.header__top-row {
+  @apply bg-[#614D49] lap:h-[53px] h-[2.8rem] pe-[8%];
+  @apply max-md:h-[3.7rem] max-md:pe-[13%];
+}
+
+.header__bottom-row {
+  @apply bg-[#E8E1E0] font-[700] h-[54px] ps-[47px] lap:flex hidden;
+}
+
+.header__nav {
+  @apply max-md:invisible max-md:w-[10%];
+}
+
+.header__nav-list {
+  @apply flex flex-row items-center;
+}
+
+.header__nav-list.top-row {
+  @apply gap-[3.5rem] text-[#fff];
+  @apply max-[856px]:gap-[0.5rem];
+}
+
+.header__nav-list.bottom-row {
+  @apply gap-[1.5rem] text-[#503D3A];
+}
+
+.header__nav-item {
+  @apply cursor-pointer transition relative -skew-x-[-16deg];
+}
+
+.top-row .header__nav-item:first-child {
+  @apply lap:bg-[#E8E1E0] lap:text-[#7C6E6B] py-5 lap:px-16 px-8 -skew-x-[0deg];
+}
+
+.top-row .header__nav-item:first-child .nav-button {
+  @apply skew-x-[16deg];
+}
+
+.header__actions {
+  @apply flex flex-row gap-[1rem] text-[#fff] -skew-x-[-16deg];
+}
+
+.header__bid-btn {
+  @apply uppercase rounded bg-[#311311] lap:px-[45.5px] px-[1.4rem] mr-6 hover:cursor-pointer transition duration-200 hover:bg-[#B21F24];
+  @apply max-md:mr-0 max-md:px-[0.6rem] max-md:text-[12px] max-md:leading-[14px] max-md:font-['PFDinTextCondPro-Regular'];
+}
+
+.header__contacts-btn {
+  @apply uppercase hover:cursor-pointer;
+  @apply max-md:hidden;
+}
+
+.header__search {
+  @apply flex items-center transition-all duration-500 ease-out overflow-hidden;
+}
+
+.header__search-btn {
+  @apply transform transition-transform duration-300;
+}
+
+.header__search-btn--hidden {
+  @apply opacity-0 hidden;
+}
+
+.header__search-btn--visible {
+  @apply opacity-100 visible;
+}
+
+.header__search-icon {
+  @apply w-11 h-11 transition-opacity duration-300;
+}
+
+.header__search-container {
+  @apply flex items-center transition-all duration-500 ease-out overflow-hidden;
+}
+
+.header__search-container--open {
+  @apply w-77 ml-2;
+}
+
+.header__search-container--closed {
+  @apply w-0;
+}
+
+.header__search-input {
+  @apply flex-grow p-3 bg-white/20 text-white placeholder-white focus:outline-none rounded-l placeholder:font-['PFDinTextCompPro-Regular'] placeholder:text-[1rem] transition-opacity duration-300;
+}
+
+.header__search-input--visible {
+  @apply opacity-100;
+}
+
+.header__search-input--hidden {
+  @apply opacity-0;
+}
+
+.header__search-submit {
+  @apply flex items-center justify-center bg-[#343232] text-white pl-2 pr-4 rounded cursor-pointer transition-opacity duration-300;
+}
+
+.header__search-submit--visible {
+  @apply opacity-100;
+}
+
+.header__search-submit--hidden {
+  @apply opacity-0;
+}
+
+.header__search-submit-icon {
+  @apply w-[2.6rem] h-[2.6rem] mr-2;
+}
+
+.header__burger {
+  @apply md:hidden;
+}
+
+.header__lang {
+  @apply bg-transparent border-none text-[#fff] hover:cursor-pointer;
+  @apply max-md:hidden;
+}
+
+.nav-button {
+  @apply uppercase hover:cursor-pointer transition duration-200;
+}
+
+.bottom-row .nav-button {
+  @apply hover:rounded-none hover:bg-[#B21F24] hover:text-white py-[6px] px-[13px] -skew-x-[16deg];
+}
+
+.bottom-row .nav-button.active {
+  @apply bg-[#B21F24] text-white;
+}
+
+.nav-button span {
+  @apply relative;
+}
+
+.nav-button-title {
+  @apply -skew-x-[-16deg];
+}
+
+.top-row .header__nav-item:last-child {
+  @apply lap:ps-[0] ps-[7.6%];
+}

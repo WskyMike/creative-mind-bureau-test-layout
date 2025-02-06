@@ -1,0 +1,13 @@
+@reference "../index.css";
+
+.red-button-left__button {
+  @apply bg-[#B21F24] uppercase flex justify-center items-center gap-7 -skew-x-[16deg] w-[14rem] hover:cursor-pointer active:bg-[#800000];
+}
+
+.red-button-left__text {
+  @apply text-white tracking-wide leading-[19px] -skew-x-[-16deg] text-[14px] py-5 ps-7;
+}
+
+.red-button-left__img {
+  @apply -skew-x-[-16deg];
+}

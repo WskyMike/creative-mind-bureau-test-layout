@@ -1,0 +1,54 @@
+@reference "../index.css";
+
+.bottom-section {
+  @apply bg-[#D9D9D9] rounded h-127 relative w-[106%] overflow-hidden mb-25 -ml-[3%];
+  @apply lap:h-215 lap:ml-0 lap:w-full lap:mb-32;
+  @apply max-sm:h-160 max-md:mb-20 max-md:ms-0 max-md:me-0 max-md:w-[100%] max-md:rounded-none;
+}
+
+.bottom-section__image-wrapper {
+  @apply relative w-full h-full;
+}
+
+.bottom-section__img {
+  @apply w-full h-full object-cover;
+}
+
+.bottom-section__text-overlay {
+  @apply absolute inset-0 flex flex-col items-start max-w-[25rem] ps-10 pt-4;
+  @apply lap:ps-18 lap:pt-15  lap:max-w-[41rem];
+  @apply max-md:px-[0.8rem] max-md:pt-8;
+}
+
+.bottom-section__head {
+  @apply text-[3rem] text-white tracking-wide leading-[96px];
+  @apply lap:text-[5rem];
+  @apply max-md:text-[2.4rem];
+}
+
+.bottom-section__text {
+  @apply text-[1rem] text-white leading-[20px] font-['PFDinTextCompPro-Regular'] pt-2;
+  @apply lap:text-[1.6rem] lap:leading-[34px] lap:pt-7;
+  @apply max-md:text-[1.1rem] max-md:leading-[24px] max-md:pt-1;
+}
+
+.bottom-section__button-container {
+  @apply absolute -bottom-[1px] -right-5 flex justify-center bg-white h-20 w-58 -skew-x-[16deg];
+  @apply lap:h-36 lap:w-87;
+  @apply max-md:h-11 max-md:w-49;
+}
+
+.bottom-section__button {
+  @apply bg-[#B21F24] uppercase h-13 w-88 flex justify-center items-center gap-3 hover:cursor-pointer active:bg-[#800000];
+  @apply lap:h-23 lap:gap-15;
+  @apply max-md:h-11;
+}
+
+.bottom-section__button-text {
+  @apply text-white tracking-wide leading-[19px] -skew-x-[-16deg] text-[0.8rem] ps-0;
+  @apply lap:text-[1rem] lap:ps-5;
+}
+
+.bottom-section__button-img {
+  @apply -skew-x-[-16deg];
+}

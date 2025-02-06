@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "PFDinTextCondPro-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./pfdintextcondpro-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PFDinTextCondPro-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('./pfdintextcondpro-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "PFDinTextCompPro-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./pfdintextcomppro-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PFDinTextCompPro-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('./pfdintextcomppro-regular.woff2') format('woff2');
+}
